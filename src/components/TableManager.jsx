@@ -24,15 +24,15 @@ const TableManager = () => {
 
   return (
     <div className="page-container">
-      <h2 className="section-title">🪑 Table Manager (Multiple Restaurants)</h2>
+      <h2 className="section-title">🪑 Table Manager</h2>
 
       {Object.keys(allTables).map(restaurant => {
         const reservedTables = (groupedReservations[restaurant] || []).map(r => r.table);
         const availableTables = allTables[restaurant].filter(t => !reservedTables.includes(t));
 
         return (
-          <div key={restaurant} style={{ marginBottom: '30px', border: '2px solid #7B3F00', borderRadius: '12px', padding: '20px', backgroundColor: '#fff5d1' }}>
-            <h3 style={{ color: '#7B3F00' }}>{restaurant}</h3>
+          <div key={restaurant} className="restaurant-box">
+            <h3 className="restaurant-title">{restaurant}</h3>
             <p>Total Reserved: <strong>{reservedTables.length}</strong></p>
             <p>Total Available: <strong>{availableTables.length}</strong></p>
 
