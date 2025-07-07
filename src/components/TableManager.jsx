@@ -66,4 +66,3 @@ const TableManager = () => {
 };
 
 export default TableManager;
-
