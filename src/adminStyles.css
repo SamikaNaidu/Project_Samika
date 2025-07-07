@@ -77,3 +77,17 @@ tr:nth-child(odd) {
 .primary-button:hover {
   background-color: #e66a0d;
 }
+
+.restaurant-box {
+  margin-bottom: 30px;
+  border: 2px solid #7B3F00;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff5d1;
+}
+
+.restaurant-title {
+  color: #7B3F00;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
